@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .flex-container {
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: baseline;
+
+
+            border: 2px solid darkred;
+            padding: 10px;
+        }
+
+
+        .flex-element {
+            width: 150px;
+
+            background-color: tomato;
+            color: #ffffff;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 15px;
+        }
+        .flex-element:last-child {
+            align-self: flex-end;
+        }
+        /*
+            align-self: auto | flex-start | flex-end | center | baseline | stretch
+
+         */
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-element" style="height: 200px">
+            flex-1
+        </div>
+        <div class="flex-element" style="height: 130px">
+            flex-2
+        </div>
+        <div class="flex-element" style="height: 80px">
+            <h2>flex-3</h2>
+        </div>
+        <div class="flex-element" style="height: 100px">
+            flex-4
+        </div>
+        <div class="flex-element" style="height: 220px">
+            flex-5
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            /*
+                justify-content: center;        - выравнивание по центру
+                justify-content: flex-end;      - в конец по оси
+                justify-content: flex-start;    - в начало по оси (по умолчанию)
+                justify-content: space-around;  - равномерно распределяет
+                justify-content: space-between  - от краев, остальные по центру
+            */
+
+            border: 2px solid darkred;
+            padding: 10px;
+        }
+
+
+        .flex-element {
+            background-color: tomato;
+            color: #ffffff;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 15px;
+        }
+
+        /*.flex-element:last-child{
+            margin-left: auto;
+        }
+        .flex-element:nth-child(3){
+            margin: auto;
+        }*/
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-element">
+            flex-1
+        </div>
+        <div class="flex-element">
+            flex-2
+        </div>
+        <div class="flex-element">
+            flex-3
+        </div>
+        <div class="flex-element">
+            flex-4
+        </div>
+        <div class="flex-element">
+            flex-5
+        </div>
+    </div>
+</body>
+</html>

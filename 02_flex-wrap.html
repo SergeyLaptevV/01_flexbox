@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+           /*
+            height: 100px;
+            flex-direction: column;
+           */
+
+            flex-wrap: wrap;
+            /*
+                flex-wrap: nowrap; - по умолчанию
+                flex-wrap: wrap; - один под одним
+                flex-wrap: wrap-reverse; - один под одним (обратный отсчет)
+            */
+
+            border: 2px solid darkred;
+            padding: 10px;
+        }
+
+
+        .flex-element {
+            width: 200px; /**/
+            background-color: tomato;
+            color: #ffffff;
+
+
+            padding: 10px;
+            margin: 5px;
+            border-radius: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-element">
+            flex-1
+        </div>
+        <div class="flex-element">
+            flex-2
+        </div>
+        <div class="flex-element">
+            flex-3
+        </div>
+        <div class="flex-element">
+            flex-4
+        </div>
+        <div class="flex-element">
+            flex-5
+        </div>
+    </div>
+</body>
+</html>
